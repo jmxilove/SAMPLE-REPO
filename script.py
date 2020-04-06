@@ -1,4 +1,5 @@
 import requests
 
-name = input("Your name?")
-print("Hello,", name)
+r = requests.get("https://christopherjin.com/")
+print(r.status_code)
+print(r.ok)
